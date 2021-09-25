@@ -1,0 +1,1 @@
+logs/year=2021/month=01/day=20/gen_logs_s3-3-2021-01-20-13-47-30-ab9c685b-f083-48e5-80e7-8003bcad3810

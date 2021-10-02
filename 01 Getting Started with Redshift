@@ -1,0 +1,73 @@
+-- Checking existing tables
+
+SELECT * FROM information_schema.tables
+WHERE table_schema = 'public'
+
+-- Validating users table
+
+SELECT * FROM users LIMIT 10;
+
+SELECT count(*) FROM users;
+
+-- Getting started using create table
+
+CREATE TABLE myusers (
+  user_id INT PRIMARY KEY,
+  user_first_name VARCHAR(30),
+  user_last_name VARCHAR(30)
+);
+
+-- CRUD Operations - Insert one record at a time
+
+INSERT INTO myusers
+VALUES (1, 'Scott', 'Tiger')
+
+INSERT INTO myusers
+VALUES (2, 'Donald', 'Duck')
+
+SELECT * FROM myusers;
+
+-- CRUD Operations - Insert multiple records at once
+
+INSERT INTO myusers
+VALUES (1, 'Scott', 'Tiger'),
+	(2, 'Donald', 'Duck')
+
+SELECT * FROM myusers;
+
+-- Constraints can be created, but not enforced (Primary Key, Unique Key and Foreign Key)
+
+-- CRUD Operations - Update records in Redshift table
+
+SELECT * FROM myusers
+
+UPDATE myusers
+	SET user_first_name = 'Mickey', user_last_name = 'Mouse'
+WHERE user_id = 2
+
+SELECT * FROM myusers
+
+SELECT lower('Mouse')
+
+SELECT * FROM myusers
+
+UPDATE myusers
+	SET user_first_name = lower(user_first_name), user_last_name = lower(user_last_name)
+    
+SELECT * FROM myusers
+
+
+-- CRUD Operations - Delete records from Retail table
+
+SELECT * FROM myusers
+
+DELETE FROM myusers
+WHERE user_id = 1
+
+SELECT * FROM myusers
+
+DELETE FROM myusers
+
+TRUNCATE TABLE myusers
+
+SELECT * FROM myusers

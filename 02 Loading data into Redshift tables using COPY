@@ -1,0 +1,89 @@
+-- Setup Data in s3 to Copy into Redshift Tables
+aws s3 rm s3://itv-retail/retail_db/ --recursive
+aws s3 cp retail_db s3://itv-retail/retail_db --recursive
+aws s3 ls s3://itv-retail/retail_db/ --recursive
+
+-- Create Database and Table for Redshift Copy Command
+
+CREATE DATABASE retail_db;
+
+DROP TABLE IF EXISTS orders;
+CREATE TABLE orders (
+  order_id INT,
+  order_date DATE,
+  order_customer_id INT,
+  order_status VARCHAR(30)
+);
+
+-- Create IAM user with programmatic access having required privileges on s3 (full access)
+
+copy orders from 's3://itv-retail/retail_db/orders/part-00000' 
+credentials 'aws_access_key_id=AKIAYPNCQ2YQMDCCT6GN;aws_secret_access_key=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'
+csv;
+
+SELECT * FROM stl_load_errors
+
+DROP TABLE IF EXISTS orders;
+CREATE TABLE orders (
+  order_id INT PRIMARY KEY,
+  order_date DATETIME,
+  order_customer_id INT,
+  order_status VARCHAR(30)
+);
+
+COPY orders FROM 's3://itv-retail/retail_db/orders/part-00000' 
+CREDENTIALS 'aws_access_key_id=AKIAYPNCQ2YQMDCCT6GN;aws_secret_access_key=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'
+CSV;
+
+SELECT * FROM orders LIMIT 10
+
+SELECT count(1) FROM orders
+
+-- Create IAM Role with s3 full access
+
+* Create role for Redshift Service with s3 full access policy.
+* Add role to Redshift cluster (Actions -> Manage Permissions -> Manage IAM).
+* Wait until the server is modified and in available state.
+
+-- Copy data from s3 using IAM Role
+
+DROP TABLE IF EXISTS order_items;
+CREATE TABLE order_items (
+  order_item_id INT PRIMARY KEY,
+  order_item_order_id INT,
+  order_item_product_id INT,
+  order_item_quantity INT,
+  order_item_subtotal FLOAT,
+  order_item_product_price FLOAT
+);
+
+COPY order_items FROM 's3://itv-retail/retail_db/order_items/part-00000' 
+IAM_ROLE 'arn:aws:iam::582845781536:role/ITVRedshiftS3FullAccessRole'
+DELIMITER ','
+
+SELECT * FROM order_items LIMIT 10
+
+SELECT count(*) FROM order_items
+
+-- Supported file formats of Redshift Copy Command
+
+-- Copy JSON Files
+
+DROP TABLE IF EXISTS order_items;
+
+CREATE TABLE order_items (
+  order_item_id INT PRIMARY KEY,
+  order_item_order_id INT,
+  order_item_product_id INT,
+  order_item_quantity INT,
+  order_item_subtotal FLOAT,
+  order_item_product_price FLOAT
+);
+
+COPY order_items FROM 's3://itv-retail/retail_db_json/order_items'
+IAM_ROLE 'arn:aws:iam::582845781536:role/ITVRedshiftS3FullAccessRole'
+JSON AS 'auto'
+
+SELECT * FROM order_items LIMIT 10
+
+SELECT count(*) FROM order_items

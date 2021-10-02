@@ -4,7 +4,9 @@ genlogss3-venv
 ghad-venv
 gl-env
 deaws-env
+deaws-venv
 ghad-venv
+rd-venv
 
 ghalib
 ghrlib
@@ -25,3 +27,6 @@ ghactivity-downloader.zip
 ghrepos-loader.zip
 
 2021-01-20-21.json.gz
+
+retail_db
+retail_db_json

@@ -1,0 +1,31 @@
+total 304
+-rw-r--r--   1 itversity  staff    436 Dec 20  2020 credentials.json
+-rw-r--r--   1 itversity  staff    764 Dec 20  2020 token.pickle
+-rw-r--r--   1 itversity  staff   2148 Dec 22  2020 10_transformations_using_glue.ipynb
+-rw-r--r--   1 itversity  staff  17753 Jan  2  2021 03_populate_posts_table.ipynb
+drwxr-xr-x   9 itversity  staff    288 Jan 19  2021 01_getting_started
+drwxr-xr-x  10 itversity  staff    320 Jan 24  2021 aws-glue-samples
+drwxr-xr-x  12 itversity  staff    384 Jan 26  2021 03_google_form_to_dynamodb
+drwxr-xr-x   7 itversity  staff    224 Feb  1  2021 glue-apis
+-rw-r--r--   1 itversity  staff   3824 Feb  3  2021 ghrepos-loader-src.zip
+-rw-r--r--   1 itversity  staff   2257 Feb  3  2021 ghactivity-downloader-src.zip
+drwxr-xr-x  14 itversity  staff    448 Feb  4  2021 ghrepos-loader
+drwxr-xr-x   4 itversity  staff    128 Aug 19  2021 05_lambda_functions
+drwxr-xr-x   9 itversity  staff    288 Sep  1  2021 deaws-env
+drwxr-xr-x   4 itversity  staff    128 Sep  1  2021 mastering-kinesis
+drwxr-xr-x  14 itversity  staff    448 Sep  5  2021 ghactivity-downloader
+drwxr-xr-x   8 itversity  staff    256 Sep 25  2021 github-activity
+-rw-r--r--   1 itversity  staff   1836 Sep 25  2021 01_dynamodb_to_athena.ipynb
+-rw-r--r--   1 itversity  staff  24870 Sep 25  2021 02_overview_of_dynamodb.ipynb
+-rw-r--r--   1 itversity  staff   1333 Oct  4  2021 01 Getting Started with Redshift
+-rw-r--r--   1 itversity  staff   2434 Oct  4  2021 02 Loading data into Redshift tables using COPY
+-rw-r--r--   1 itversity  staff   7615 Oct  4  2021 05 Redshift tables with distkeys and sortkeys
+-rw-r--r--   1 itversity  staff  17523 Oct  4  2021 athena_boto3_reference_guide.ipynb
+drwxr-xr-x   3 itversity  staff     96 Oct  4  2021 redshift-demo
+-rw-r--r--   1 itversity  staff  15828 Oct  4  2021 redshift_federated_queries_and_spectrum.ipynb
+-rw-r--r--   1 itversity  staff   7672 Oct  5  2021 content
+-rw-r--r--   1 itversity  staff  11030 Oct 14  2021 athena_reference_guide.ipynb
+drwxr-xr-x  16 itversity  staff    512 Nov  9  2021 04_github_to_dynamodb
+-rw-r--r--   1 itversity  staff   3364 Jun 22 09:32 emr_cli.sh
+-rw-r--r--   1 itversity  staff    745 Jun 22 10:24 emr-step.json
+-rw-r--r--   1 itversity  staff      0 Jun 22 11:27 access.log

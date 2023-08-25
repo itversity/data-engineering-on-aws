@@ -15,3 +15,7 @@ aws emr create-cluster \
   --name 'itv-github-emr' \
   --scale-down-behavior TERMINATE_AT_TASK_COMPLETION \
   --region us-east-1
+
+aws emr add-steps \
+  --cluster-id j-XXXXXXXX \
+  --steps Type=CUSTOM_JAR,Name=CustomJAR,ActionOnFailure=CONTINUE,Jar=s3://mybucket/mytest.jar,Args=arg1,arg2,arg3

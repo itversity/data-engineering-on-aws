@@ -1,0 +1,147 @@
+Section 1: Introduction to Data Engineering using Databricks
+Lecture 1: Overview of the course - Data Engineering using Databricks
+Lecture 2: Where are the resources that are used for this course?
+Lecture 3: [Must Watch] 30 Day Money Back Guarantee, Feedback and Rating
+Section 2: Getting Started
+Lecture 4: Signing Up For Databricks Community Edition
+Lecture 5: Create Azure Databricks Service
+Lecture 6: Signup For Databricks Full Trial
+Lecture 7: Overview Of Databricks UI
+Lecture 8: Upload Data In Files Into Databricks.
+Lecture 9: Create Cluster In Databricks Platform.
+Lecture 10: Managing File System Using Notebooks
+Section 3: Setup Local Development Environment
+Lecture 11: Setup Single Node Databricks Cluster
+Lecture 12: Install Databricks Connect
+Lecture 13: Configure Databricks Connect
+Lecture 14: Integrating Pycharm with Databricks Connect
+Lecture 15: Code - Integrating Pycharm with Databricks Connect
+Lecture 16: Integrate Databricks Cluster with Glue Catalog
+Lecture 17: Setup s3 Bucket and Grant Permissions
+Lecture 18: Mounting s3 Buckets into Databricks Clusters
+Lecture 19: Using dbutils from IDEs such as Pycharm
+Lecture 20: Code - Using dbutils from IDEs such as Pycharm
+Section 4: Using Databricks CLI
+Lecture 21: Introduction
+Lecture 22: Install and Configure Databricks CLI
+Lecture 23: Interacting with File System using CLI.
+Lecture 24: Getting Cluster Details using CLI
+Section 5: Spark Application Development Life Cycle
+Lecture 25: Setup Virtual Environment and Install Pyspark
+Lecture 26: [Commands] - Setup Virtual Environment and Install Pyspark
+Lecture 27: Getting Started with Pycharm
+Lecture 28: [Code and Instructions] - Getting Started with Pycharm
+Lecture 29: Passing Run Time Arguments
+Lecture 30: Accessing OS Environment Variables
+Lecture 31: Getting Started with Spark
+Lecture 32: Create Function for Spark Session
+Lecture 33: [Code and Instructions] - Create Function for Spark Session
+Lecture 34: Setup Sample Data
+Lecture 35: Read data from files
+Lecture 36: [Code and Instructions] - Read data from files
+Lecture 37: Process data using Spark APIs
+Lecture 38: [Code and Instructions] - Process data using Spark APIs
+Lecture 39: Write data to files
+Lecture 40: [Code and Instructions] - Write data to files
+Lecture 41: Validating Writing Data to Files
+Lecture 42: Productionizing the Code
+Lecture 43: [Code and Instructions] - Productionizing the code
+Lecture 44: Setting up Data for Production Validation
+Section 6: Databricks Jobs and Clusters
+Lecture 45: Introduction to Jobs and Clusters
+Lecture 46: Creating Pools in Databricks Platform
+Lecture 47: Create Cluster on Azure Databricks
+Lecture 48: Request to Increase CPU Quota on Azure
+Lecture 49: Creating Job on Databricks
+Lecture 50: Submitting Jobs using Job Cluster
+Lecture 51: Create Pool in Databricks
+Lecture 52: Running Job using Interactive Cluster Attached to Pool
+Lecture 53: Running Job Using Job Cluster Attached to Pool
+Lecture 54: Exercise - Submit the application as job using interactive cluster
+Section 7: Deploy and Run on Databricks
+Lecture 55: Prepare PyCharm for Databricks
+Lecture 56: Prepare Data Sets
+Lecture 57: Move files to ghactivity
+Lecture 58: Refactor Code for Databricks
+Lecture 59: Validating Data using Databricks
+Lecture 60: Setup Data Set for Production Deployment
+Lecture 61: Access File Metadata using dbutils
+Lecture 62: Build Deployable bundle for Databricks
+Lecture 63: Running Jobs using Databricks Web UI.
+Lecture 64: Get Job and Run Details using Databricks CLI
+Lecture 65: Submitting Databricks Jobs using CLI
+Lecture 66: Setup and Validate Databricks Client Library
+Lecture 67: Resetting the Job using Jobs API
+Lecture 68: Run Databricks Job programmatically using Python
+Lecture 69: Detailed Validation of Data
+Section 8: Deploy Jobs using Notebooks
+Lecture 70: Modularizing Notebooks
+Lecture 71: Running Job using Notebook
+Lecture 72: Refactor application as Databricks Notebooks
+Section 9: Deep Dive into Delta Lake using Data Frames
+Lecture 74: Introduction to Delta Lake using Data Frames
+Lecture 75: Creating Data Frames for Delta Lake
+Lecture 76: Writing Data Frame using Delta Format
+Lecture 77: Updating Existing Data using Delta Format
+Lecture 78: Delete Existing Data using Delta Format
+Lecture 79: Merge or Upsert Data using Delta Format
+Lecture 80: Deleting using Merge in Delta Lake
+Lecture 81: Point in Snapshot Recovery using Delta Logs
+Lecture 82: Deleting unnecessary Delta Files using Vacuum
+Lecture 83: Compaction of Delta Lake Files
+Section 10: Deep Dive into Delta Lake using Spark SQL
+Lecture 84: Introduction to Delta Lake using SQL
+Lecture 85: Creating Data Frames for Delta Lake
+Lecture 86: Create Delta Lake Table
+Lecture 87: Insert Data to Delta Lake Table
+Lecture 88: Update Data in Delta Lake Table
+Lecture 89: Delete Data from Delta Lake Table
+Lecture 90: Merge or Upsert Data into Delta Lake Table
+Lecture 91: Using Merge Function over Delta Lake Table
+Lecture 92: Point in Snapshot Recovery using Delta Lake Table
+Lecture 93: Vacuuming Delta Lake Tables
+Lecture 94: Compaction of Delta Lake Tables
+Section 11: Accessing Databricks Cluster Terminal via Web as well as SSH
+Lecture 95: Enable Web Terminal in Databricks Admin Console
+Lecture 96: Launch Web Terminal for Databricks Cluster
+Lecture 97: Setup SSH for the Databricks Cluster Driver Node
+Lecture 98: Validate SSH Connectivity to the Databricks Driver Node on AWS
+Lecture 99: Limitations of SSH and comparison with Web Terminal
+Section 12: Installing Softwares on Databricks Clusters using init scripts
+Lecture 100: Setup gen_logs on Databricks Cluster
+Lecture 101: [Commands] Setup gen_logs on Databricks Cluster
+Lecture 102: Overview of Init Scripts for Databricks Clusters
+Lecture 103: Create Script to install software from git on Databricks Cluster
+Lecture 104: [Commands] Create Script to install software from git on Databricks Cluster
+Lecture 105: Copy init script to dbfs location
+Lecture 106: [Commands] Copy init script to dbfs location
+Lecture 107: Create Databricks Standalone Cluster with init script
+Section 13: Quick Recap of Spark Structured Streaming
+Lecture 108: Validate Netcat on Databricks Driver Node
+Lecture 109: Push log messages to Netcat Webserver on Databricks Driver Node
+Lecture 110: Reading Web Server logs using Spark Structured Streaming
+Lecture 111: Writing Streaming Data to Files
+Section 14: Incremental Loads using Spark Structured Streaming
+Lecture 112: Overview of Spark Structured Streaming
+Lecture 113: Steps for Incremental Data Processing
+Lecture 114: Configure Cluster with Instance Profile.mp4
+Lecture 115: Upload GHArchive Files to s3
+Lecture 116: Read JSON Data using Spark Structured Streaming
+Lecture 117: Write using Delta file format using Trigger Once
+Lecture 118: Analyze GHArchive Data in Delta files using Spark
+Lecture 119: Add New GHActivity JSON files
+Lecture 120: Load Data Incrementally to Target Table
+Lecture 121: Validate Incremental Load
+Lecture 122: Internals of Spark Structured Streaming File Processing
+Section 15: Incremental Loads using Cloud Files
+Lecture 123: Overview of Auto Loader cloudFiles
+Lecture 124: Upload GHArchive Files to s3
+Lecture 125: Write Data using Auto Loader cloudFiles
+Lecture 126: Add New GHActivity JSON files
+Lecture 127: Load Data Incrementally to Target Table
+Lecture 128: Add New GHActivity JSON files
+Lecture 129: Overview of Handling S3 Events using AWS Services
+Lecture 130: Configure IAM Role for cloudFiles file notifications
+Lecture 131: Incremental Load using cloudFiles File Notifications
+Lecture 132: Review AWS Services for cloudFiles Event Notifications
+Lecture 133: Review Metadata Generated for cloudFiles Checkpointing
